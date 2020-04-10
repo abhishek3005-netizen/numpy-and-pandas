@@ -1,0 +1,22 @@
+import pandas as pd 
+
+import pandas as pd 
+
+germanCars = {
+    'Company': ['Ford', 'Mercedes', 'BMV', 'Audi'], 
+    'Price': [23845, 171995, 135925 , 71400]
+    }
+
+japaneseCars = {
+    'Company': ['Toyota', 'Honda', 'Nissan', 'Mitsubishi'], 
+    'Price': [29995, 23600, 61500 , 58900]
+    }
+
+df1 = pd.DataFrame(germanCars)
+df2 = pd.DataFrame(japaneseCars)
+
+df3 = pd.concat([df1,df2], ignore_index=True)
+
+df3.sort_values(by = ['Price'], inplace = True, ignore_index = True)
+
+print(df3)

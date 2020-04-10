@@ -1,0 +1,6 @@
+import numpy as np
+a=np.arange(0,8,dtype="int16")
+b=a.reshape((4,2))
+print(b.shape)
+print(b.ndim)
+print(b.itemsize)

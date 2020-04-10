@@ -1,0 +1,4 @@
+import numpy as np
+sample_array=np.array([[11,22,33],[44,55,66],[77,88,99]])
+b=np.transpose(sample_array)
+print(b[1])

@@ -1,0 +1,23 @@
+import numpy as np
+arr=np.array([[34,43,73],[82,22,12],[53,94,66]])
+def sort_by_row(arr):
+    rows,cols=arr.shape
+    for k in range(cols):
+        for j in range(0,cols-k-1):
+            if (arr[1][j]>arr[1][j+1]):
+                arr[1][j],arr[1][j+1]=arr[1][j+1],arr[1][j]
+                arr[0][j],arr[0][j+1]=arr[0][j+1],arr[0][j]
+                arr[2][j],arr[2][j+1]=arr[2][j+1],arr[2][j]
+    print(arr)
+def sort_by_col(arr):
+    rows,cols=arr.shape
+    for k in range(rows):
+        for j in range(0,rows-k-1):
+            if (arr[j][1]>arr[j+1][1]):
+                arr[j][1],arr[j+1][1]=arr[j+1][1],arr[j][1]
+                arr[j][0],arr[j+1][0]=arr[j+1][0],arr[j][0]
+                arr[j][2],arr[j+1][2]=arr[j+1][2],arr[j][2]
+    print(arr)
+sort_by_col(arr)
+
+                            

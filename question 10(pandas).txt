@@ -1,0 +1,7 @@
+import pandas as pd 
+
+df = pd.read_csv(r"C:\Users\Abhishek\Desktop\Automobile_data (Ass 1 Dataset).csv")
+
+g = df.groupby('company').size()
+
+print(g)

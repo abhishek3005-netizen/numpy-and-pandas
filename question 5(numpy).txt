@@ -1,0 +1,8 @@
+import numpy
+arrayOne=numpy.array([[5,6,9],[21,18,27]])
+arrayTwo=numpy.array([[15,33,24],[4,7,1]])
+print("Additiion of two arrays is :\n ")
+result_array=arrayOne+arrayTwo
+print(result_array)
+print("Result after calculating the square of all elements:\n")
+print(result_array**2)
